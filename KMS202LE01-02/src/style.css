@@ -1,0 +1,446 @@
+@font-face {
+    font-family: 'BisonBold';
+    src: url('fonts/Bison-Bold.ttf') format('truetype');
+}
+
+@keyframes fadeUpAnimation{
+    from {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul,
+ul li,
+ul li a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+h1 {
+    font-family: 'BisonBold';
+    font-size: 6vw;
+    color: #b16203;
+}
+
+h3 {
+    font-family: 'BisonBold';
+    font-size: 20px;
+    color: #b16203;
+}
+
+.main-body {
+    background-color: rgb(2, 4, 5);
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+}
+
+.topnav {
+    font-family: 'BisonBold';
+    background-color: rgba(240, 248, 255, 0.863);
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    margin-top: 2px;
+    display: inline-block;
+    height: 60px;
+    margin-right: 20px;
+    text-align: center;
+    position: absolute;
+    left: 10%;
+}
+
+.topnav a {
+    float: none;
+    display: inline-block;
+    color: #0f0d08fa;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    transition: transform .1s;
+}
+
+.topnav a:hover {
+    color: rgb(49, 52, 53);
+    transform: scale(1.1);
+}
+
+.topnav a.active {
+    color: rgb(17, 16, 15);
+}
+
+
+.main-section {
+    background-image: url('img/main-section-background-min.jpg');
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-section .introduction {
+    margin-top: 20vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    height: 80vh;
+}
+
+.logo-section {
+    width: 30%;
+    height: auto;
+}
+
+.products-tittle {
+    background-color: #d8d6d6;
+    font-family: "Bisonbold";
+    color: rgb(17, 9, 9);
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    flex-direction: column;
+}
+
+.content-section {
+    background-color: #d8d6d6;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0% 0% 10% 0%;
+    align-items: center;
+    height: auto;
+}
+
+
+.coffee-item:hover {
+    transition: transform .9s;
+    transform: scale(1.01);
+}
+
+.coffee-item {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+}
+
+.coffee-item .image {
+    border: 1px solid #b16203;
+    align-items: center;
+    border-radius: 20px;
+    flex: 0 0 60%;
+}
+
+.coffee-item .details {
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.coffee-item .details p,
+.coffee-item .details h3,
+.coffee-item .details ul,
+.coffee-item .details li {
+    text-align: center;
+}
+
+.coffee-item .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    /* Esto hace que la imagen se ajuste manteniendo su relación de aspecto */
+}
+
+.titleForm {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    font-family: Bisonbold;
+    font-size: 30px;
+    height: auto;
+}
+
+
+.contact-section {
+    margin: -4vh;
+    /*Between main-section and contect-section is a space of 2vh*/
+    background-size: cover;
+    background-position: center;
+    background-image: url('img/customer-service-business-contact-concept-wooden-cube-block-which-print-screen-letter-telephone-email-address-message.jpg');
+    height: auto;
+    width: auto;
+    padding: 0% 0% 8% 0;
+}
+
+.container-form {
+    margin-top: 8vh;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #67959be0;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 600px;
+}
+
+.container-form form {
+    justify-content: center;
+    text-align: center;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    margin-bottom: 10px;
+}
+
+
+/* Style the label to display next to the inputs */
+
+label {
+    padding: 12px 12px 12px 0px;
+    display: inline-block;
+}
+
+
+/* Style the submit button */
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    transition: transform .9s;
+    transform: scale(1.1);
+}
+
+/* Style the container */
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    text-align: right;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer-main {
+    background-color: rgb(2, 1, 1);
+    display: flex;
+    align-items: center;
+    padding: 3%;
+    color: white;
+    height: auto;
+    width: auto;
+    margin: 0;
+}
+
+.map-container {
+    width: 100%;
+    /* Establece el ancho máximo del mapa */
+    padding-bottom: 100%;
+    /* Proporción de aspecto 4:3 para mantener la relación de aspecto */
+    position: relative;
+    /* Asegura que los elementos hijos se posicionen relativos a este contenedor */
+}
+
+.footer-main .section {
+    flex: 1;
+    max-width: 33%;
+    margin: 0 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.map-container iframe {
+    border: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+}
+
+.section p {
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-main h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-main .section h2 {
+    font-size: 20px;
+    color: rgb(250, 244, 244);
+}
+
+.menu-footer ul li {
+    margin-bottom: 15px;
+}
+
+.menu-footer {
+    text-align: center;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin-right: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.footer-main .menu-footer a:hover {
+    color: rgb(176, 176, 192);
+    transition: transform .9s;
+    transform: scale(1.1);
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 768px) {
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .logo {
+        margin-top: 5px;
+        height: 40px;
+    }
+
+    .topnav {
+        text-align: right;
+    }
+
+    .topnav a {
+        padding: 14px 16px;
+        font-size: 20px;
+    }
+
+    .main-section {
+        height: 50vh;
+    }
+
+    .main-section .introduction {
+        margin-top: 60vh;
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+
+    .logo-section {
+        width: 30%;
+    }
+
+    .coffee-item {
+        flex-direction: column;
+        width: 50%;
+        height: 50%;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .coffee-item .image {
+        flex: none;
+        width: 50%;
+        margin-bottom: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .coffee-item .details {
+        flex: 1 0 auto;
+        width: 100%;
+
+    }
+
+    .footer-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-main .section {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .map-container {
+        padding-bottom: 100%;
+        /* Haz que el mapa ocupe más espacio verticalmente */
+    }
+}
